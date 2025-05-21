@@ -1,0 +1,31 @@
+{
+
+    "num_epochs" : 20,
+    "target_acc" : 95,
+    "model_type" : "Efficientnet-B0",
+    "pretrained" : 0,
+    "freeze_net" : 1,
+    "train_batch_size" : 32,
+    "dev_batch_size_train" : 32,
+    "dev_batch_size_post" : 1, 
+    "test_batch_size" : 1,
+    "learning_rate" : 0.01,
+    "train_test_split" : 0.8,
+    "train_dev_split" : 0.8,
+    "decay_rate" : 5e-4,
+    "class_count" : 10,
+    "classes" : ["plane", "car", "bird", "cat","deer", "dog", "frog", "horse", "ship", "truck"],
+    "class_wts_list" : [0.666, 0.666, 0.666, 0.333,0.666, 1.0, 0.666, 0.666, 0.666, 0.666],
+    "seed": 26,
+    "seed_holdout": 1,
+    "image_pro" : 0,
+    "file_tankyard" : "Nothing 1",
+    "file_train" : "Nothing 2",
+    "file_key" :  "Nothing 3",
+    "file_model" : "model.pth",
+    "delta" : 0.45,
+    "save" : 1,
+    "epsilon_threshold" : 0.001,
+    "beta" : 0.65
+
+}
