@@ -1,0 +1,30 @@
+{
+
+    "num_epochs" : 30,
+    "target_acc" : 85,
+    "model_type" : "resnet18",
+    "pretrained" : 0,
+    "freeze_net" : 1,
+    "train_batch_size" : 32,
+    "dev_batch_size_train" : 32,
+    "dev_batch_size_post" : 1, 
+    "test_batch_size" : 1,
+    "learning_rate" : 0.01,
+    "train_test_split" : 0.8,
+    "train_dev_split" : 0.8,
+    "decay_rate" : 5e-4,
+    "class_count" : 10,
+    "classes" : ["plane", "car", "bird", "cat","deer", "dog", "frog", "horse", "ship", "truck"],
+    "class_wts_list" : [0.667, 0.667, 0.667, 0.333,0.667, 1.0, 0.667, 0.667, 0.667, 0.667],
+    "seed_count_total" : 31,
+    "seed_count_session" : 31,
+    "seed_holdout": 8,
+    "image_pro" : 0,
+    "file_model" : "best_model.pth",
+    "delta" : 0.45,
+    "save" : 1,
+    "epsilon_threshold" : 0.001,
+    "beta" : 0.64,
+    "kfold" : 10
+
+}
